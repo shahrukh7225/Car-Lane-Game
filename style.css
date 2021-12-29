@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#app {
+  width: 73.125rem;
+  margin: 20px auto;
+}
+
+.game-container {
+  width: 700px;
+  height: 750px;
+  background: url('images/road.jpg');
+  background-size: contain;
+  text-align: center;
+  background-size: 100% 100%;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.game-instruction,
+.game-over {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+
+.game-instruction > h2 {
+  font-size: 40px;
+}
+
+.game-over > h2 {
+  font-size: 60px;
+  color: red;
+}
+
+.start-button {
+  outline: none;
+  cursor: pointer;
+  display: block;
+  font: normal normal 300 1.3em 'Open Sans';
+  color: rgb(114, 10, 10);
+  background-color: whitesmoke;
+  border: 1px solid rgba(28, 190, 131, 1);
+  border-radius: 100px;
+  padding: 0.3em 1.2em;
+  margin: 5px 110px;
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    to right,
+    transparent 50%,
+    rgba(28, 190, 131, 1) 50%
+  );
+  transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s,
+    color 0.5s ease 0s, background-color 0.5s ease;
+}
+
+.start-button:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(28, 190, 131, 1);
+  background-position: -100% 100%;
+}
+
+.score-container {
+  display: inline-block;
+  margin-left: 20px;
+  display: none;
+}
+
+.score-container > p {
+  font-size: 20px;
+  margin-bottom: 60px;
+}
